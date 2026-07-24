@@ -107,7 +107,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/pulsar_core.zip
-    url: https://github.com/PulsarFW/pulsar_core/releases/latest/download/pulsar-core.zip
+    url: https://github.com/PulsarFW/pulsar_core/releases/latest/download/pulsar_core.zip
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_core.zip
