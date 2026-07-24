@@ -88,14 +88,14 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_voip/releases/latest/download/pulsar-voip.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-voip.zip
+    src: ./tmp/pulsar_voip.zip
 
   - action: download_file
     path: ./tmp/pulsar_radio.zip
     url: https://github.com/PulsarFW/pulsar_radio/releases/latest/download/pulsar-radio.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-radio.zip
+    src: ./tmp/pulsar_radio.zip
 
   # Downloading Pulsar resources
   - action: download_file
@@ -103,42 +103,42 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_loadscreen/releases/latest/download/pulsar-loadscreen.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-loadscreen.zip
+    src: ./tmp/pulsar_loadscreen.zip
 
   - action: download_file
     path: ./tmp/pulsar_core.zip
     url: https://github.com/PulsarFW/pulsar_core/releases/latest/download/pulsar-core.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-core.zip
+    src: ./tmp/pulsar_core.zip
 
   - action: download_file
     path: ./tmp/pulsar_queue.zip
     url: https://github.com/PulsarFW/pulsar_queue/releases/latest/download/pulsar-queue.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-queue.zip
+    src: ./tmp/pulsar_queue.zip
 
   - action: download_file
     path: ./tmp/pulsar_pwnzor.zip
     url: https://github.com/PulsarFW/pulsar_pwnzor/releases/latest/download/pulsar-pwnzor.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-pwnzor.zip
+    src: ./tmp/pulsar_pwnzor.zip
 
   - action: download_file
     path: ./tmp/pulsar_objects.zip
     url: https://github.com/PulsarFW/pulsar_objects/releases/latest/download/pulsar-objects.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-objects.zip
+    src: ./tmp/pulsar_objects.zip
 
   - action: download_file
     path: ./tmp/pulsar_chat.zip
     url: https://github.com/PulsarFW/pulsar_chat/releases/latest/download/pulsar-chat.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-chat.zip
+    src: ./tmp/pulsar_chat.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -148,21 +148,21 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_commands/releases/latest/download/pulsar-commands.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-commands.zip
+    src: ./tmp/pulsar_commands.zip
 
   - action: download_file
     path: ./tmp/pulsar_characters.zip
     url: https://github.com/PulsarFW/pulsar_characters/releases/latest/download/pulsar-characters.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-characters.zip
+    src: ./tmp/pulsar_characters.zip
 
   - action: download_file
     path: ./tmp/pulsar_ped.zip
     url: https://github.com/PulsarFW/pulsar_ped/releases/latest/download/pulsar-ped.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-ped.zip
+    src: ./tmp/pulsar_ped.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_ped.sql
@@ -172,42 +172,42 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_kbs/releases/latest/download/pulsar-kbs.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-kbs.zip
+    src: ./tmp/pulsar_kbs.zip
 
   - action: download_file
     path: ./tmp/pulsar_admin.zip
     url: https://github.com/PulsarFW/pulsar_admin/releases/latest/download/pulsar-admin.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-admin.zip
+    src: ./tmp/pulsar_admin.zip
 
   - action: download_file
     path: ./tmp/pulsar_ipl.zip
     url: https://github.com/PulsarFW/pulsar_ipl/releases/latest/download/pulsar-ipl.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-ipl.zip
+    src: ./tmp/pulsar_ipl.zip
 
   - action: download_file
     path: ./tmp/pulsar_polyzone.zip
     url: https://github.com/PulsarFW/pulsar_polyzone/releases/latest/download/pulsar-polyzone.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-polyzone.zip
+    src: ./tmp/pulsar_polyzone.zip
 
   - action: download_file
     path: ./tmp/pulsar_lasers.zip
     url: https://github.com/PulsarFW/pulsar_lasers/releases/latest/download/pulsar-lasers.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-lasers.zip
+    src: ./tmp/pulsar_lasers.zip
 
   - action: download_file
     path: ./tmp/pulsar_hud.zip
     url: https://github.com/PulsarFW/pulsar_hud/releases/latest/download/pulsar-hud.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-hud.zip
+    src: ./tmp/pulsar_hud.zip
     timeoutSeconds: 200
 
   - action: download_file
@@ -215,35 +215,35 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_games/releases/latest/download/pulsar-games.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-games.zip
+    src: ./tmp/pulsar_games.zip
 
   - action: download_file
     path: ./tmp/pulsar_blips.zip
     url: https://github.com/PulsarFW/pulsar_blips/releases/latest/download/pulsar-blips.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-blips.zip
+    src: ./tmp/pulsar_blips.zip
 
   - action: download_file
     path: ./tmp/pulsar_sounds.zip
     url: https://github.com/PulsarFW/pulsar_sounds/releases/latest/download/pulsar-sounds.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-sounds.zip
+    src: ./tmp/pulsar_sounds.zip
 
   - action: download_file
     path: ./tmp/pulsar_menu.zip
     url: https://github.com/PulsarFW/pulsar_menu/releases/latest/download/pulsar-menu.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-menu.zip
+    src: ./tmp/pulsar_menu.zip
 
   - action: download_file
     path: ./tmp/pulsar_sync.zip
     url: https://github.com/PulsarFW/pulsar_sync/releases/latest/download/pulsar-sync.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-sync.zip
+    src: ./tmp/pulsar_sync.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -253,35 +253,35 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_scenes/releases/latest/download/pulsar-scenes.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-scenes.zip
+    src: ./tmp/pulsar_scenes.zip
 
   - action: download_file
     path: ./tmp/pulsar_pedinteraction.zip
     url: https://github.com/PulsarFW/pulsar_pedinteraction/releases/latest/download/pulsar-pedinteraction.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-pedinteraction.zip
+    src: ./tmp/pulsar_pedinteraction.zip
 
   - action: download_file
     path: ./tmp/pulsar_status.zip
     url: https://github.com/PulsarFW/pulsar_status/releases/latest/download/pulsar-status.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-status.zip
+    src: ./tmp/pulsar_status.zip
 
   - action: download_file
     path: ./tmp/pulsar_damage.zip
     url: https://github.com/PulsarFW/pulsar_damage/releases/latest/download/pulsar-damage.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-damage.zip
+    src: ./tmp/pulsar_damage.zip
 
   - action: download_file
     path: ./tmp/pulsar_escort.zip
     url: https://github.com/PulsarFW/pulsar_escort/releases/latest/download/pulsar-escort.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-escort.zip
+    src: ./tmp/pulsar_escort.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -291,14 +291,14 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_animations/releases/latest/download/pulsar-animations.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-animations.zip
+    src: ./tmp/pulsar_animations.zip
 
   - action: download_file
     path: ./tmp/pulsar_weapons.zip
     url: https://github.com/PulsarFW/pulsar_weapons/releases/latest/download/pulsar-weapons.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-weapons.zip
+    src: ./tmp/pulsar_weapons.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_weapons.sql
@@ -308,7 +308,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_businesses/releases/latest/download/pulsar-businesses.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-businesses.zip
+    src: ./tmp/pulsar_businesses.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_businesses.sql
@@ -318,14 +318,14 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_vacation/releases/latest/download/pulsar-vacation.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-vacation.zip
+    src: ./tmp/pulsar_vacation.zip
 
   - action: download_file
     path: ./tmp/pulsar_finance.zip
     url: https://github.com/PulsarFW/pulsar_finance/releases/latest/download/pulsar-finance.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-finance.zip
+    src: ./tmp/pulsar_finance.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_finance.sql
@@ -335,7 +335,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_laptop/releases/latest/download/pulsar-laptop.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-laptop.zip
+    src: ./tmp/pulsar_laptop.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_racing.sql
@@ -345,35 +345,35 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_killzones/releases/latest/download/pulsar-killzones.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-killzones.zip
+    src: ./tmp/pulsar_killzones.zip
 
   - action: download_file
     path: ./tmp/pulsar_elevators.zip
     url: https://github.com/PulsarFW/pulsar_elevators/releases/latest/download/pulsar-elevators.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-elevators.zip
+    src: ./tmp/pulsar_elevators.zip
 
   - action: download_file
     path: ./tmp/pulsar_apartments.zip
     url: https://github.com/PulsarFW/pulsar_apartments/releases/latest/download/pulsar-apartments.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-apartments.zip
+    src: ./tmp/pulsar_apartments.zip
 
   - action: download_file
     path: ./tmp/pulsar_properties.zip
     url: https://github.com/PulsarFW/pulsar_properties/releases/latest/download/pulsar-properties.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-properties.zip
+    src: ./tmp/pulsar_properties.zip
 
   - action: download_file
     path: ./tmp/pulsar_weed.zip
     url: https://github.com/PulsarFW/pulsar_weed/releases/latest/download/pulsar-weed.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-weed.zip
+    src: ./tmp/pulsar_weed.zip
 
   - action: waste_time
     seconds: 10
@@ -383,7 +383,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_dealerships/releases/latest/download/pulsar-dealerships.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-dealerships.zip
+    src: ./tmp/pulsar_dealerships.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_dealerships.sql
@@ -393,7 +393,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_drugs/releases/latest/download/pulsar-drugs.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-drugs.zip
+    src: ./tmp/pulsar_drugs.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_drugs.sql
@@ -403,91 +403,91 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_robbery/releases/latest/download/pulsar-robbery.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-robbery.zip
+    src: ./tmp/pulsar_robbery.zip
 
   - action: download_file
     path: ./tmp/pulsar_jail.zip
     url: https://github.com/PulsarFW/pulsar_jail/releases/latest/download/pulsar-jail.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-jail.zip
+    src: ./tmp/pulsar_jail.zip
 
   - action: download_file
     path: ./tmp/pulsar_evidence.zip
     url: https://github.com/PulsarFW/pulsar_evidence/releases/latest/download/pulsar-evidence.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-evidence.zip
+    src: ./tmp/pulsar_evidence.zip
 
   - action: download_file
     path: ./tmp/pulsar_vehicles.zip
     url: https://github.com/PulsarFW/pulsar_vehicles/releases/latest/download/pulsar-vehicles.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-vehicles.zip
+    src: ./tmp/pulsar_vehicles.zip
 
   - action: download_file
     path: ./tmp/pulsar_customs.zip
     url: https://github.com/PulsarFW/pulsar_customs/releases/latest/download/pulsar-customs.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-customs.zip
+    src: ./tmp/pulsar_customs.zip
 
   - action: download_file
     path: ./tmp/pulsar_fuel.zip
     url: https://github.com/PulsarFW/pulsar_fuel/releases/latest/download/pulsar-fuel.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-fuel.zip
+    src: ./tmp/pulsar_fuel.zip
 
   - action: download_file
     path: ./tmp/pulsar_tow.zip
     url: https://github.com/PulsarFW/pulsar_tow/releases/latest/download/pulsar-tow.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-tow.zip
+    src: ./tmp/pulsar_tow.zip
 
   - action: download_file
     path: ./tmp/pulsar_fitment.zip
     url: https://github.com/PulsarFW/pulsar_fitment/releases/latest/download/pulsar-fitment.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-fitment.zip
+    src: ./tmp/pulsar_fitment.zip
 
   - action: download_file
     path: ./tmp/pulsar_jobs.zip
     url: https://github.com/PulsarFW/pulsar_jobs/releases/latest/download/pulsar-jobs.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-jobs.zip
+    src: ./tmp/pulsar_jobs.zip
 
   - action: download_file
     path: ./tmp/pulsar_labor.zip
     url: https://github.com/PulsarFW/pulsar_labor/releases/latest/download/pulsar-labor.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-labor.zip
+    src: ./tmp/pulsar_labor.zip
 
   - action: download_file
     path: ./tmp/pulsar_mechanic.zip
     url: https://github.com/PulsarFW/pulsar_mechanic/releases/latest/download/pulsar-mechanic.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-mechanic.zip
+    src: ./tmp/pulsar_mechanic.zip
 
   - action: download_file
     path: ./tmp/pulsar_police.zip
     url: https://github.com/PulsarFW/pulsar_police/releases/latest/download/pulsar-police.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-police.zip
+    src: ./tmp/pulsar_police.zip
 
   - action: download_file
     path: ./tmp/pulsar_cctv.zip
     url: https://github.com/PulsarFW/pulsar_cctv/releases/latest/download/pulsar-cctv.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-cctv.zip
+    src: ./tmp/pulsar_cctv.zip
 
   - action: waste_time
     seconds: 10
@@ -497,7 +497,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_mdt/releases/latest/download/pulsar-mdt.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-mdt.zip
+    src: ./tmp/pulsar_mdt.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_mdt.sql
@@ -507,28 +507,28 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_radar/releases/latest/download/pulsar-radar.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-radar.zip
+    src: ./tmp/pulsar_radar.zip
 
   - action: download_file
     path: ./tmp/pulsar_restaurant.zip
     url: https://github.com/PulsarFW/pulsar_restaurant/releases/latest/download/pulsar-restaurant.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-restaurant.zip
+    src: ./tmp/pulsar_restaurant.zip
 
   - action: download_file
     path: ./tmp/pulsar_taxi.zip
     url: https://github.com/PulsarFW/pulsar_taxi/releases/latest/download/pulsar-taxi.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-taxi.zip
+    src: ./tmp/pulsar_taxi.zip
 
   - action: download_file
     path: ./tmp/pulsar_billboards.zip
     url: https://github.com/PulsarFW/pulsar_billboards/releases/latest/download/pulsar-billboards.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-billboards.zip
+    src: ./tmp/pulsar_billboards.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_misc.sql
@@ -538,7 +538,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_casino/releases/latest/download/pulsar-casino.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-casino.zip
+    src: ./tmp/pulsar_casino.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_casino.sql
@@ -548,21 +548,21 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_dj/releases/latest/download/pulsar-dj.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-dj.zip
+    src: ./tmp/pulsar_dj.zip
 
   - action: download_file
     path: ./tmp/pulsar_xmas.zip
     url: https://github.com/PulsarFW/pulsar_xmas/releases/latest/download/pulsar-xmas.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-xmas.zip
+    src: ./tmp/pulsar_xmas.zip
 
   - action: download_file
     path: ./tmp/pulsar_phone.zip
     url: https://github.com/PulsarFW/pulsar_phone/releases/latest/download/pulsar-phone.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-phone.zip
+    src: ./tmp/pulsar_phone.zip
   - action: connect_database
   - action: query_database
     file: ./tmp/pulsar/pulsar_phone.sql
@@ -572,7 +572,7 @@ tasks:
     url: https://github.com/PulsarFW/pulsar_ws/releases/latest/download/pulsar-ws.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar-ws.zip
+    src: ./tmp/pulsar_ws.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
