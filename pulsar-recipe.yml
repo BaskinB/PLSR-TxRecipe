@@ -619,6 +619,9 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar.sql
 
   # Clean up
   - action: remove_path
