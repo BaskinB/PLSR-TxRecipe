@@ -160,6 +160,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_ped.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_ped.sql
 
   - action: download_file
     path: ./tmp/pulsar_kbs.zip
@@ -293,6 +296,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_weapons.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_weapons.sql
 
   - action: download_file
     path: ./tmp/pulsar_businesses.zip
@@ -300,6 +306,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_businesses.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_businesses.sql
 
   - action: download_file
     path: ./tmp/pulsar_vacation.zip
@@ -314,6 +323,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_finance.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_finance.sql
 
   - action: download_file
     path: ./tmp/pulsar_laptop.zip
@@ -321,6 +333,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_laptop.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_racing.sql
 
   - action: download_file
     path: ./tmp/pulsar_killzones.zip
@@ -366,6 +381,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_dealerships.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_dealerships.sql
 
   - action: download_file
     path: ./tmp/pulsar_drugs.zip
@@ -373,6 +391,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_drugs.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_drugs.sql
 
   - action: download_file
     path: ./tmp/pulsar_robbery.zip
@@ -476,7 +497,7 @@ tasks:
     src: ./tmp/pulsar_mdt.zip
   - action: connect_database
   - action: query_database
-    file: ./tmp/pulsar/mdt.sql
+    file: ./tmp/pulsar/pulsar_mdt.sql
 
   - action: download_file
     path: ./tmp/pulsar_radar.zip
@@ -505,6 +526,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_billboards.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_misc.sql
 
   - action: download_file
     path: ./tmp/pulsar_casino.zip
@@ -512,6 +536,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_casino.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_casino.sql
 
   - action: download_file
     path: ./tmp/pulsar_dj.zip
@@ -533,6 +560,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_phone.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_phone.sql
 
   - action: download_file
     path: ./tmp/pulsar_ws.zip
@@ -572,6 +602,9 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/pulsar_ox_inventory.sql
 
   - action: download_file
     path: ./tmp/ox_inv_addons.zip
@@ -586,9 +619,6 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
-  - action: connect_database
-  - action: query_database
-    file: ./tmp/pulsar/doorlock.sql
 
   # Clean up
   - action: remove_path

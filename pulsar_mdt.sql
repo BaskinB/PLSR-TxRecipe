@@ -1,3 +1,16 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+DROP TABLE IF EXISTS `character_parole`;
+CREATE TABLE IF NOT EXISTS `character_parole` (
+  `SID` int(11) NOT NULL,
+  `end` datetime NOT NULL,
+  `total` int(11) NOT NULL DEFAULT 0,
+  `parole` int(11) NOT NULL DEFAULT 0,
+  `sentence` int(11) NOT NULL DEFAULT 0,
+  `fine` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`SID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
 DROP TABLE IF EXISTS `mdt_charges`;
 CREATE TABLE IF NOT EXISTS `mdt_charges` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -263,3 +276,18 @@ CREATE TABLE IF NOT EXISTS `mdt_warrants` (
   KEY `report` (`report`),
   KEY `expires` (`expires`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+DROP TABLE IF EXISTS `scenes`;
+CREATE TABLE IF NOT EXISTS `scenes` (
+  `_id` int(11) NOT NULL AUTO_INCREMENT,
+  `coords` text NOT NULL,
+  `length` int(11) DEFAULT NULL,
+  `expires` bigint(20) DEFAULT NULL,
+  `staff` tinyint(1) DEFAULT NULL,
+  `distance` float DEFAULT NULL,
+  `route` int(11) DEFAULT NULL,
+  `text` text DEFAULT NULL,
+  `background` text DEFAULT NULL,
+  PRIMARY KEY (`_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
