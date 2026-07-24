@@ -205,13 +205,15 @@ tasks:
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_lasers.zip
 
+  - action: waste_time
+    seconds: 10
+
   - action: download_file
     path: ./tmp/pulsar_hud.zip
     url: https://github.com/PulsarFW/pulsar_hud/releases/latest/download/pulsar-hud.zip
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_hud.zip
-    timeoutSeconds: 200
 
   - action: download_file
     path: ./tmp/pulsar_games.zip
