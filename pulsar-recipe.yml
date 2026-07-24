@@ -43,6 +43,9 @@ tasks:
   - action: query_database
     file: ./tmp/pulsar/pulsar.sql
 
+  - action: waste_time
+    seconds: 10
+
   # STANDALONE
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data

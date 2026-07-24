@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `casino_bigwins`;
 CREATE TABLE IF NOT EXISTS `casino_bigwins` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `player_name` VARCHAR(255) NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE IF NOT EXISTS `casino_bigwins` (
     KEY `game` (`game`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `casino_config`;
 CREATE TABLE IF NOT EXISTS `casino_config` (
     `key` VARCHAR(255) NOT NULL,
     `data` LONGTEXT DEFAULT NULL,
@@ -18,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `casino_config` (
     CONSTRAINT `data` CHECK (json_valid(`data`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `casino_statistics`;
 CREATE TABLE IF NOT EXISTS `casino_statistics` (
     `SID` VARCHAR(255) NOT NULL,
     `slots` LONGTEXT DEFAULT NULL,

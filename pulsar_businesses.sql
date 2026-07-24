@@ -1,13 +1,11 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `business_configs`;
 CREATE TABLE IF NOT EXISTS `business_configs` (
     `key` VARCHAR(255) NOT NULL,
     `value` TEXT DEFAULT NULL,
     PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `business_documents`;
 CREATE TABLE IF NOT EXISTS `business_documents` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `job` VARCHAR(255) NOT NULL,
@@ -24,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `business_documents` (
     CONSTRAINT `lastUpdated` CHECK (json_valid(`lastUpdated`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `business_notices`;
 CREATE TABLE IF NOT EXISTS `business_notices` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `job` VARCHAR(255) NOT NULL,
@@ -36,7 +33,6 @@ CREATE TABLE IF NOT EXISTS `business_notices` (
     CONSTRAINT `author` CHECK (json_valid(`author`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `business_phones`;
 CREATE TABLE IF NOT EXISTS `business_phones` (
   `id` char(50) NOT NULL DEFAULT 'AUTO_INCREMENT',
   `number` varchar(50) NOT NULL DEFAULT '0',
@@ -44,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `business_phones` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `business_receipts`;
 CREATE TABLE IF NOT EXISTS `business_receipts` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `job` VARCHAR(255) NOT NULL,
@@ -63,7 +58,6 @@ CREATE TABLE IF NOT EXISTS `business_receipts` (
     CONSTRAINT `lastUpdated` CHECK (json_valid(`lastUpdated`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `business_tvs`;
 CREATE TABLE IF NOT EXISTS `business_tvs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `tv` varchar(255) DEFAULT NULL,

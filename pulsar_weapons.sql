@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `firearms`;
 CREATE TABLE IF NOT EXISTS `firearms` (
   `police_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `serial` char(128) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
@@ -17,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `firearms` (
   KEY `serial` (`serial`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1956 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `firearms_flags`;
 CREATE TABLE IF NOT EXISTS `firearms_flags` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `serial` char(128) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
@@ -33,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `firearms_flags` (
   KEY `serial` (`serial`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `firearms_projectiles`;
 CREATE TABLE IF NOT EXISTS `firearms_projectiles` (
     `Id` VARCHAR(255) NOT NULL,
     `Weapon` LONGTEXT DEFAULT NULL,

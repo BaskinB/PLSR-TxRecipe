@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `blueline_race_history`;
 CREATE TABLE IF NOT EXISTS `blueline_race_history` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `state` int(11) NOT NULL DEFAULT 0,
@@ -15,7 +14,6 @@ CREATE TABLE IF NOT EXISTS `blueline_race_history` (
   KEY `host` (`host`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `blueline_tracks`;
 CREATE TABLE IF NOT EXISTS `blueline_tracks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
@@ -26,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `blueline_tracks` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `blueline_track_history`;
 CREATE TABLE IF NOT EXISTS `blueline_track_history` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `track` int(11) unsigned NOT NULL,
@@ -43,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `blueline_track_history` (
   KEY `callsign` (`callsign`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `redline_racer_history`;
 CREATE TABLE IF NOT EXISTS `redline_racer_history` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `sid` int(11) unsigned NOT NULL,
@@ -58,7 +54,6 @@ CREATE TABLE IF NOT EXISTS `redline_racer_history` (
   KEY `racer_history` (`sid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `redline_race_history`;
 CREATE TABLE IF NOT EXISTS `redline_race_history` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `state` int(11) NOT NULL DEFAULT 0,
@@ -73,7 +68,6 @@ CREATE TABLE IF NOT EXISTS `redline_race_history` (
   KEY `race_history_track` (`track`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `redline_tracks`;
 CREATE TABLE IF NOT EXISTS `redline_tracks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
@@ -84,7 +78,6 @@ CREATE TABLE IF NOT EXISTS `redline_tracks` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `redline_track_history`;
 CREATE TABLE IF NOT EXISTS `redline_track_history` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `track` int(11) unsigned NOT NULL,

@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `peds`;
 CREATE TABLE IF NOT EXISTS `peds` (
   `char` varchar(255) NOT NULL,
   `ped` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE IF NOT EXISTS `peds` (
   CONSTRAINT `ped` CHECK (json_valid(`ped`))
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `whitelisted_peds`;
 CREATE TABLE IF NOT EXISTS `whitelisted_peds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `sid` int(11) NOT NULL,
@@ -20,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `whitelisted_peds` (
   KEY `model` (`model`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-DROP TABLE IF EXISTS `placed_props`;
 CREATE TABLE IF NOT EXISTS `placed_props` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `model` varchar(255) NOT NULL DEFAULT '',

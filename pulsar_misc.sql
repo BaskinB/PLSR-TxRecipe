@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `billboards`;
 CREATE TABLE IF NOT EXISTS `billboards` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `billboardId` varchar(50) NOT NULL,

@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `bank_accounts`;
 CREATE TABLE IF NOT EXISTS `bank_accounts` (
   `account` int(10) NOT NULL,
   `type` varchar(255) NOT NULL,
@@ -12,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
   KEY `Type` (`type`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `bank_accounts_permissions`;
 CREATE TABLE IF NOT EXISTS `bank_accounts_permissions` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `account` int(10) NOT NULL,
@@ -28,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `bank_accounts_permissions` (
   KEY `account` (`account`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=149 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `bank_accounts_transactions`;
 CREATE TABLE IF NOT EXISTS `bank_accounts_transactions` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `type` varchar(255) NOT NULL,
@@ -42,14 +39,12 @@ CREATE TABLE IF NOT EXISTS `bank_accounts_transactions` (
   KEY `account` (`account`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-DROP TABLE IF EXISTS `shop_bank_accounts`;
 CREATE TABLE IF NOT EXISTS `shop_bank_accounts` (
   `shop` int(10) unsigned NOT NULL,
   `bank` int(10) unsigned NOT NULL,
   PRIMARY KEY (`shop`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `loans`;
 CREATE TABLE IF NOT EXISTS `loans` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `Creation` INT(11) NOT NULL,
@@ -79,7 +74,6 @@ CREATE TABLE IF NOT EXISTS `loans` (
     CONSTRAINT `terms` CHECK (json_valid(`terms`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `loans_credit_scores`;
 CREATE TABLE IF NOT EXISTS `loans_credit_scores` (
     `SID` VARCHAR(255) NOT NULL,
     `Score` INT(11) NOT NULL DEFAULT 0,

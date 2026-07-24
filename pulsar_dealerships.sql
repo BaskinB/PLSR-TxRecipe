@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `dealer_data`;
 CREATE TABLE IF NOT EXISTS `dealer_data` (
   `dealership` varchar(255) NOT NULL,
   `sales` int(11) DEFAULT 0,
@@ -12,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `dealer_data` (
   PRIMARY KEY (`dealership`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `dealer_records`;
 CREATE TABLE IF NOT EXISTS `dealer_records` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `dealership` varchar(255) NOT NULL,
@@ -30,7 +28,6 @@ CREATE TABLE IF NOT EXISTS `dealer_records` (
   CONSTRAINT `vehicle` CHECK (json_valid(`vehicle`))
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `dealer_records_buybacks`;
 CREATE TABLE IF NOT EXISTS `dealer_records_buybacks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `dealership` varchar(255) NOT NULL,
@@ -48,7 +45,6 @@ CREATE TABLE IF NOT EXISTS `dealer_records_buybacks` (
   CONSTRAINT `vehicle` CHECK (json_valid(`vehicle`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `dealer_showrooms`;
 CREATE TABLE IF NOT EXISTS `dealer_showrooms` (
   `dealership` varchar(255) NOT NULL,
   `showroom` longtext DEFAULT NULL,
@@ -56,7 +52,6 @@ CREATE TABLE IF NOT EXISTS `dealer_showrooms` (
   CONSTRAINT `showroom` CHECK (json_valid(`showroom`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `dealer_stock`;
 CREATE TABLE IF NOT EXISTS `dealer_stock` (
   `dealership` varchar(255) NOT NULL,
   `vehicle` varchar(255) NOT NULL,
@@ -73,7 +68,6 @@ CREATE TABLE IF NOT EXISTS `dealer_stock` (
   CONSTRAINT `data` CHECK (json_valid(`data`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `donator_items`;
 CREATE TABLE IF NOT EXISTS `donator_items` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `player` char(128) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
@@ -86,7 +80,6 @@ CREATE TABLE IF NOT EXISTS `donator_items` (
   KEY `player_redeemed` (`player`,`redeemed`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `donator_plates`;
 CREATE TABLE IF NOT EXISTS `donator_plates` (
   `player` varchar(255) NOT NULL,
   `pending` int(11) NOT NULL DEFAULT 0,
@@ -96,7 +89,6 @@ CREATE TABLE IF NOT EXISTS `donator_plates` (
   PRIMARY KEY (`player`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `donator_vehicles`;
 CREATE TABLE IF NOT EXISTS `donator_vehicles` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `player` VARCHAR(255) NOT NULL,
@@ -110,7 +102,6 @@ CREATE TABLE IF NOT EXISTS `donator_vehicles` (
     CONSTRAINT `data` CHECK (json_valid(`data`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `donor_created_item`;
 CREATE TABLE IF NOT EXISTS `donor_created_item` (
   `sid` int(11) NOT NULL,
   `item_id` char(50) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,

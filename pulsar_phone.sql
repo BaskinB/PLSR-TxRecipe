@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `character_calls`;
 CREATE TABLE IF NOT EXISTS `character_calls` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `owner` varchar(12) NOT NULL,
@@ -17,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `character_calls` (
   KEY `owner` (`owner`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_chatter_groups`;
 CREATE TABLE IF NOT EXISTS `character_chatter_groups` (
   `sid` bigint(20) unsigned NOT NULL,
   `chatty_group` bigint(20) unsigned NOT NULL,
@@ -26,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `character_chatter_groups` (
   KEY `chatter_char_group` (`chatty_group`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_contacts`;
 CREATE TABLE IF NOT EXISTS `character_contacts` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `sid` bigint(20) NOT NULL,
@@ -39,7 +36,6 @@ CREATE TABLE IF NOT EXISTS `character_contacts` (
   KEY `sid` (`sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_documents`;
 CREATE TABLE IF NOT EXISTS `character_documents` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `sid` int(11) unsigned NOT NULL,
@@ -50,7 +46,6 @@ CREATE TABLE IF NOT EXISTS `character_documents` (
   KEY `owner` (`sid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_documents_shared`;
 CREATE TABLE IF NOT EXISTS `character_documents_shared` (
   `doc_id` int(10) unsigned NOT NULL,
   `sid` int(10) unsigned NOT NULL,
@@ -66,7 +61,6 @@ CREATE TABLE IF NOT EXISTS `character_documents_shared` (
   KEY `doc_sid` (`doc_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_emails`;
 CREATE TABLE IF NOT EXISTS `character_emails` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `sid` int(10) unsigned NOT NULL,
@@ -81,7 +75,6 @@ CREATE TABLE IF NOT EXISTS `character_emails` (
   KEY `sid` (`sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_messages`;
 CREATE TABLE IF NOT EXISTS `character_messages` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `owner` varchar(12) NOT NULL,
@@ -96,7 +89,6 @@ CREATE TABLE IF NOT EXISTS `character_messages` (
   KEY `ownu` (`owner`,`number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `character_photos`;
 CREATE TABLE IF NOT EXISTS `character_photos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `sid` varchar(50) NOT NULL,
@@ -106,7 +98,6 @@ CREATE TABLE IF NOT EXISTS `character_photos` (
   KEY `idx_sid` (`sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `chatter_groups`;
 CREATE TABLE IF NOT EXISTS `chatter_groups` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `label` varchar(64) NOT NULL DEFAULT 'Chatter Group',
@@ -116,7 +107,6 @@ CREATE TABLE IF NOT EXISTS `chatter_groups` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `chatter_messages`;
 CREATE TABLE IF NOT EXISTS `chatter_messages` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `group` bigint(20) unsigned NOT NULL,

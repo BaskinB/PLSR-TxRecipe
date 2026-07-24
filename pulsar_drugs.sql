@@ -1,13 +1,11 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `bench_schematics`;
 CREATE TABLE IF NOT EXISTS `bench_schematics` (
   `bench` char(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
   `schematic` char(255) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
   KEY `bench` (`bench`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `character_schematics`;
 CREATE TABLE IF NOT EXISTS `character_schematics` (
   `sid` int(11) DEFAULT NULL,
   `bench` char(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
@@ -17,14 +15,12 @@ CREATE TABLE IF NOT EXISTS `character_schematics` (
   KEY `sid_schem` (`sid`,`schematic`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `crafting_cooldowns`;
 CREATE TABLE IF NOT EXISTS `crafting_cooldowns` (
   `bench` varchar(64) NOT NULL,
   `id` varchar(64) NOT NULL,
   `expires` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `meth_tables`;
 CREATE TABLE IF NOT EXISTS `meth_tables` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `tier` int(11) NOT NULL DEFAULT 1,
@@ -35,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `meth_tables` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `moonshine_barrels`;
 CREATE TABLE IF NOT EXISTS `moonshine_barrels` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `quality` int(11) NOT NULL,
@@ -43,7 +38,6 @@ CREATE TABLE IF NOT EXISTS `moonshine_barrels` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `moonshine_stills`;
 CREATE TABLE IF NOT EXISTS `moonshine_stills` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `created` int(11) NOT NULL,
@@ -53,7 +47,6 @@ CREATE TABLE IF NOT EXISTS `moonshine_stills` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `placed_meth_tables`;
 CREATE TABLE IF NOT EXISTS `placed_meth_tables` (
   `table_id` int(11) NOT NULL,
   `owner` bigint(20) DEFAULT NULL,
@@ -64,7 +57,6 @@ CREATE TABLE IF NOT EXISTS `placed_meth_tables` (
   PRIMARY KEY (`table_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `placed_moonshine_barrels`;
 CREATE TABLE IF NOT EXISTS `placed_moonshine_barrels` (
   `barrel_id` int(11) NOT NULL,
   `owner` varchar(50) NOT NULL,
@@ -77,7 +69,6 @@ CREATE TABLE IF NOT EXISTS `placed_moonshine_barrels` (
   PRIMARY KEY (`barrel_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `placed_moonshine_stills`;
 CREATE TABLE IF NOT EXISTS `placed_moonshine_stills` (
   `still_id` int(11) NOT NULL,
   `owner` varchar(50) NOT NULL,
@@ -88,7 +79,6 @@ CREATE TABLE IF NOT EXISTS `placed_moonshine_stills` (
   PRIMARY KEY (`still_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `weed`;
 CREATE TABLE IF NOT EXISTS `weed` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `is_male` TINYINT(1) NOT NULL,

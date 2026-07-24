@@ -1,6 +1,5 @@
 SET FOREIGN_KEY_CHECKS=0;
 
-DROP TABLE IF EXISTS `character_parole`;
 CREATE TABLE IF NOT EXISTS `character_parole` (
   `SID` int(11) NOT NULL,
   `end` datetime NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `character_parole` (
   PRIMARY KEY (`SID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `mdt_charges`;
 CREATE TABLE IF NOT EXISTS `mdt_charges` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` tinyint(4) NOT NULL DEFAULT 1,
@@ -169,7 +167,6 @@ INSERT INTO `mdt_charges` (`id`, `type`, `title`, `description`, `fine`, `jail`,
 	(143, 1, 'Driving Without Headlights During Darkness', 'Driving after dusk and before dawn or in other poor visiblity conditions without headlights.', 100, 0, 0),
 	(144, 2, 'Accessory to Assault & Battery', 'Assits in the threatens violence or injury upon an individual either orally or thru their actions and acts upon that threat.', 1000, 15, 0);
 
-DROP TABLE IF EXISTS `mdt_library`;
 CREATE TABLE IF NOT EXISTS `mdt_library` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `label` varchar(255) NOT NULL,
@@ -181,7 +178,6 @@ CREATE TABLE IF NOT EXISTS `mdt_library` (
   KEY `workplace` (`workplace`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `mdt_notices`;
 CREATE TABLE IF NOT EXISTS `mdt_notices` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(1024) NOT NULL DEFAULT '',
@@ -193,7 +189,6 @@ CREATE TABLE IF NOT EXISTS `mdt_notices` (
   KEY `job` (`restricted`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `mdt_reports`;
 CREATE TABLE IF NOT EXISTS `mdt_reports` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` smallint(6) NOT NULL DEFAULT 0,
@@ -214,7 +209,6 @@ CREATE TABLE IF NOT EXISTS `mdt_reports` (
   KEY `allowAttorney` (`allowAttorney`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `mdt_reports_evidence`;
 CREATE TABLE IF NOT EXISTS `mdt_reports_evidence` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `report` int(11) NOT NULL,
@@ -225,7 +219,6 @@ CREATE TABLE IF NOT EXISTS `mdt_reports_evidence` (
   KEY `report` (`report`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `mdt_reports_people`;
 CREATE TABLE IF NOT EXISTS `mdt_reports_people` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `report` int(11) NOT NULL,
@@ -258,7 +251,6 @@ CREATE TABLE IF NOT EXISTS `mdt_reports_people` (
   KEY `FK2_mdt_reports_people` (`warrant`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
-DROP TABLE IF EXISTS `mdt_warrants`;
 CREATE TABLE IF NOT EXISTS `mdt_warrants` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `state` varchar(50) NOT NULL DEFAULT 'active',
@@ -277,7 +269,6 @@ CREATE TABLE IF NOT EXISTS `mdt_warrants` (
   KEY `expires` (`expires`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
-DROP TABLE IF EXISTS `scenes`;
 CREATE TABLE IF NOT EXISTS `scenes` (
   `_id` int(11) NOT NULL AUTO_INCREMENT,
   `coords` text NOT NULL,
