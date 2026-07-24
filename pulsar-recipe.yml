@@ -10,7 +10,7 @@ description: One-click txAdmin recipe to deploy Pulsar Framework.
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/BaskinB/PLSR_TxRecipe
+    src: https://github.com/BaskinB/PLSR-TxRecipe
     ref: main
     dest: ./tmp/pulsar
 
