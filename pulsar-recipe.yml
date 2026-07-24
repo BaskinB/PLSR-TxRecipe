@@ -474,6 +474,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pulsar]
     src: ./tmp/pulsar_mdt.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/mdt.sql
 
   - action: download_file
     path: ./tmp/pulsar_radar.zip
@@ -583,6 +586,9 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/pulsar/doorlock.sql
 
   # Clean up
   - action: remove_path
