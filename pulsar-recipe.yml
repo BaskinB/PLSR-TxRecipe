@@ -171,11 +171,11 @@ tasks:
     file: ./tmp/pulsar/pulsar_ped.sql
 
   - action: download_file
-    path: ./tmp/pulsar_kbs.zip
-    url: https://github.com/PulsarFW/pulsar_kbs/releases/latest/download/pulsar_kbs.zip
+    path: ./tmp/pulsar_keybinds.zip
+    url: https://github.com/PulsarFW/pulsar_keybinds/releases/latest/download/pulsar_keybinds.zip
   - action: unzip
     dest: ./resources/[pulsar]
-    src: ./tmp/pulsar_kbs.zip
+    src: ./tmp/pulsar_keybinds.zip
 
   - action: download_file
     path: ./tmp/pulsar_admin.zip
